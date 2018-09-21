@@ -4,7 +4,9 @@
 ---
 
 ## Overview
-
+Part 1 
+Role: Solo programmer
+Author: Saimouli Katragadda (@saimouli)
 Simple starter C++ project with:
 
 - cmake
