@@ -1,3 +1,9 @@
+/**
+ *  @file      main.cpp
+ *  @brief     Runs unit tests
+ *  @author    Saimouli Katragadda
+ *  @copyright GNU Public License.
+ */
 #include <gtest/gtest.h>
 
 int main(int argc, char** argv) {
