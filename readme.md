@@ -3,11 +3,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
 ---
 
-## Overview
-Part 1 
-Role: Solo programmer
+## Assignemnt Part 1 Author
+Role: Solo programmer<br/>
 Author: Saimouli Katragadda (@saimouli)
-Simple starter C++ project with:
+
+## Simple PID C++ project with:
 
 - cmake
 - googletest
