@@ -76,7 +76,7 @@ void PID::setKP(float kP) {
  * @return gain kD
  */
 float PID::getKD() {
-  return kD;
+  return 0;
 }
 
 /**
@@ -85,7 +85,7 @@ float PID::getKD() {
  * @return gain kI
  */
 float PID::getKI() {
-  return kI;
+  return 0;
 }
 
 /**
@@ -95,7 +95,7 @@ float PID::getKI() {
  */
 
 float PID::getKP() {
-  return kP;
+  return 0;
 }
 
 /**
