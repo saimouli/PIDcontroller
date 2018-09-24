@@ -114,6 +114,9 @@ float PID::computePID(float spVel, float currVel) {
   // calculate iterr for integral
   iterr += error * dT;
   // calculate final output
+  // Proportional term = kp* error
+  // integral term  = kI * iterr
+  // derivative term = kD * ((error - prevErr) / dT)
   float output = kP * error + kI * iterr + kD * ((error - prevErr) / dT);
   prevErr = error;
 
