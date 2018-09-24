@@ -108,7 +108,37 @@ float PID::getKP() {
  */
 
 float PID::computePID(float spVel, float currVel) {
-  return 0;
+  // calculate error
+  float error = spVel - currVel;
+  //error = error * 0.08;
+  // proportional term
+  // double Pout = kP * error;
+
+  // Intergral term
+
+  iterr += error * dT;
+  //double Iout = kI * iterr;
+
+  //Derivative term
+  //double derivative = (error - prevErr) / dT;
+  //double Dout = kD * derivative;
+
+  //calculate total out
+  float output = kP * error + kI * iterr + kD * ((error - prevErr) / dT);
+
+  //Pout + Iout + Dout;
+
+  // Restrict to max/min
+  /* if (output > 100)
+    output = 100;
+   else if (output < -100)
+    output = -100;
+   */
+
+  // Save error to previous error
+  prevErr = error;
+
+  return output;
 }
 
 
