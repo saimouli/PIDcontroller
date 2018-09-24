@@ -9,6 +9,7 @@
  *  This program implements PID controller
  */
 #include <iostream>
+#include "PID.h"
 
 using std::cin;
 using std::cout;
