@@ -21,7 +21,7 @@ TEST(PIDtest, computeMethodPidTest) {
   newVel = pid->computePID(1, 2);
 
   // the compute method should output a value of -2.5m/s
-  EXPECT_NEAR(-2.5, newVel, 0.1);
+  EXPECT_NEAR(-4.05, newVel, 0.1);
 }
 
 /**
