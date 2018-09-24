@@ -10,6 +10,10 @@
  */
 #include <iostream>
 
+using std::cin;
+using std::cout;
+using std::endl;
+
 int main() {
     //PID pid(2, 1, 0.1, 0.5);  // this is sai's test value
   //PID pid(0.1, 0.01, 0.5, 0.1);
