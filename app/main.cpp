@@ -20,7 +20,7 @@ int main() {
   // passing kP,kD,kI,dT values
   PID pid(2, 1, 0.1, 0.5);
   float fVal, iVal;
-  // input Target setpoint velocity 
+  // input Target setpoint velocity
   cout << "enter the Target setpoint velocity" << endl;
   cin >> fVal;
   // input actual velocity
@@ -28,6 +28,5 @@ int main() {
   cin >> iVal;
   float inc = pid.computePID(fVal, iVal);
   cout << inc << endl;
-   
   return 0;
 }

@@ -30,12 +30,12 @@ TEST(PIDtest, computeMethodPidTest) {
 
 TEST(PIDtest, SetGainsTest) {
   std::shared_ptr<PID> pid = std::make_shared<PID>();
-
-  pid->setKP(3);  // setting the gains using setKp method
+  // setting the gains using setKp method
+  pid->setKP(3);
   pid->setKD(2);
   pid->setKI(4);
-
-  EXPECT_EQ(3, pid->getKP());  // checking if the gains are properly set by Setkp method
+  // checking if the gains are properly set by Setkp method
+  EXPECT_EQ(3, pid->getKP());
   EXPECT_EQ(2, pid->getKD());
   // std::cout << "test kd: " << kd << std::endl;
   EXPECT_EQ(4, pid->getKI());

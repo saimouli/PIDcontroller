@@ -116,7 +116,3 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
     Project Explorer and choose Source -> Format
 
 [reference-id-for-eclipse-cpp-google-style]: https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-cpp-google-style.xml
-
-- Git
-
-    It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.

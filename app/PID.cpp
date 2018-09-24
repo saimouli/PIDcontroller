@@ -18,8 +18,8 @@ PID::PID()
       kD(0),
       kI(0),
       dT(0),
-      prevErr(0), 
-      iterr(0){
+      prevErr(0),
+      iterr(0) {
 }
 
 /**
