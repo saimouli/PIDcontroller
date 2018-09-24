@@ -27,6 +27,7 @@ int main() {
   cout << "enter the actual velocity" << endl;
   cin >> iVal;
   float inc = pid.computePID(fVal, iVal);
-  cout << inc << endl;
+  printf("% 7.3f\n" ,inc);
+  //cout << inc << endl;
   return 0;
 }
