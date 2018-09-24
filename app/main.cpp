@@ -1,6 +1,7 @@
 /**
  *  @file    main.cpp
  *  @author  Saimouli Katragadda
+ *  @author    Part 2 (Driver:Kapil Rawal, Navigator:Amrish Baskaran)
  *  @copyright MIT License
  *  Copyright 2018 SAIMOULI KATRAGADD 113509971
  *  @brief PID
@@ -16,11 +17,14 @@ using std::cout;
 using std::endl;
 
 int main() {
+  // passing kP,kD,kI,dT values
   PID pid(2, 1, 0.1, 0.5);
   float fVal, iVal;
-  cout << "enter the (set point)final velocity" << endl;
+  // input Target setpoint velocity 
+  cout << "enter the Target setpoint velocity" << endl;
   cin >> fVal;
-  cout << "enter the initial velocity" << endl;
+  // input actual velocity
+  cout << "enter the actual velocity" << endl;
   cin >> iVal;
   float inc = pid.computePID(fVal, iVal);
   cout << inc << endl;
