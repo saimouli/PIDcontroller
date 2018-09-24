@@ -1,6 +1,6 @@
 # PID controller Implimentation using Test-Driven Development 
-[![Build Status](https://travis-ci.org/saimouli/PID_TDD1A.svg?branch=master)](https://travis-ci.org/saimouli/PID_TDD1A)
-[![Coverage Status](https://coveralls.io/repos/github/saimouli/PID_TDD1A/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PID_TDD1A?branch=master)
+[![Build Status](https://travis-ci.org/saimouli/PIDcontroller.svg?branch=master)](https://travis-ci.org/saimouli/PIDcontroller)
+[![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
 ---
 
 ## Assignemnt Part 1 Author
