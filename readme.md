@@ -8,7 +8,7 @@ Role: Solo programmer<br/>
 Author: Saimouli Katragadda (@saimouli)
 
 ## Assignemnt Part 2 Author
-Driver:Kapil Rawal (@krawal19)
+Driver:Kapil Rawal (@krawal19)<br/>
 Navigator:Amrish Baskaran (@amrish1222)
 
 ## Simple PID C++ project with:
