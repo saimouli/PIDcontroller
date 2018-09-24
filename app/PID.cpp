@@ -17,7 +17,7 @@ PID::PID()
       kD(0),
       kI(0),
       dT(0),
-      prevErr(0) 
+      prevErr(0), 
       iterr(0){
 }
 
@@ -35,7 +35,7 @@ PID::PID(float kP, float kD, float kI, float dT)
       kD(kD),
       kI(kI),
       dT(dT),
-      prevErr(0)
+      prevErr(0),
       iterr(0) {
 }
 
