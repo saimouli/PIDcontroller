@@ -1,16 +1,18 @@
 # PID controller Implimentation using Test-Driven Development 
-[![Build Status](https://travis-ci.org/saimouli/PIDcontroller.svg?branch=master)](https://travis-ci.org/saimouli/PIDcontroller)
-[![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
+[![Build Status](https://travis-ci.org/krawal19/PIDcontroller.svg?branch=master)](https://travis-ci.org/krawal19/PIDcontroller)
+[![Coverage Status](https://coveralls.io/repos/github/krawal19/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/krawal19/PIDcontroller?branch=master)
 ---
 
 ## Assignemnt Part 1 Author
 Role: Solo programmer<br/>
 Author: Saimouli Katragadda (@saimouli)
 
-## Simple PID C++ project with:
+## Assignemnt Part 2 Author
+Driver: Kapil Rawal (@krawal19)<br/>
+Navigator: Amrish Baskaran (@amrish1222)
 
-- cmake
-- googletest
+## TODO
+- In readme.md add badges and document about lcov installation
 
 ## Standard install via command-line
 ```
@@ -112,7 +114,3 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
     Project Explorer and choose Source -> Format
 
 [reference-id-for-eclipse-cpp-google-style]: https://raw.githubusercontent.com/google/styleguide/gh-pages/eclipse-cpp-google-style.xml
-
-- Git
-
-    It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.

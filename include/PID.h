@@ -3,6 +3,7 @@
  *  @brief     PID controller header file
  *  @details   Definition and implementation of the PID class
  *  @author    Saimouli Katragadda
+ *  @author    Part 2 (Driver:Kapil Rawal, Navigator:Amrish Baskaran)
  *  @copyright GNU Public License.
  */
 
@@ -17,6 +18,8 @@
 class PID {
  public:
   PID();
+  
+ float iterr;
   /**
    * @brief default constructor assign zeros
    * @param kp

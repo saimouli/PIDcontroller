@@ -3,6 +3,7 @@
  *  @brief     PID Class
  *  @details   Definition and implementation of the PID
  *  @author    Saimouli Katragadda
+ *  @author    Part 2 (Driver:Kapil Rawal, Navigator:Amrish Baskaran)
  *  @copyright GNU Public License.
  */
 
@@ -17,7 +18,8 @@ PID::PID()
       kD(0),
       kI(0),
       dT(0),
-      prevErr(0) {
+      prevErr(0),
+      iterr(0) {
 }
 
 /**
@@ -34,7 +36,8 @@ PID::PID(float kP, float kD, float kI, float dT)
       kD(kD),
       kI(kI),
       dT(dT),
-      prevErr(0) {
+      prevErr(0),
+      iterr(0) {
 }
 
 /**
@@ -76,7 +79,7 @@ void PID::setKP(float kP) {
  * @return gain kD
  */
 float PID::getKD() {
-  return 0;
+  return this->kD;
 }
 
 /**
@@ -85,7 +88,7 @@ float PID::getKD() {
  * @return gain kI
  */
 float PID::getKI() {
-  return 0;
+  return this->kI;
 }
 
 /**
@@ -95,7 +98,7 @@ float PID::getKI() {
  */
 
 float PID::getKP() {
-  return 0;
+  return this->kP;
 }
 
 /**
@@ -106,7 +109,18 @@ float PID::getKP() {
  */
 
 float PID::computePID(float spVel, float currVel) {
-  return 0;
+  // calculate error
+  float error = spVel - currVel;
+  // calculate iterr for integral
+  iterr += error * dT;
+  // calculate final output
+  // Proportional term = kp* error
+  // integral term  = kI * iterr
+  // derivative term = kD * ((error - prevErr) / dT)
+  float output = kP * error + kI * iterr + kD * ((error - prevErr) / dT);
+  prevErr = error;
+
+  return output;
 }
 
 
