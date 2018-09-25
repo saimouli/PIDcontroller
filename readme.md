@@ -1,6 +1,6 @@
 # PID controller Implimentation using Test-Driven Development 
-[![Build Status](https://travis-ci.org/krawal19/PIDcontroller.svg?branch=master)](https://travis-ci.org/krawal19/PIDcontroller)
-[![Coverage Status](https://coveralls.io/repos/github/krawal19/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/krawal19/PIDcontroller?branch=master)
+[![Build Status](https://travis-ci.org/saimouli/PIDcontroller.svg?branch=master)](https://travis-ci.org/saimouli/PIDcontroller)
+[![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
 ---
 
 ## Assignemnt Part 1 Author
@@ -12,7 +12,7 @@ Driver: Kapil Rawal (@krawal19)<br/>
 Navigator: Amrish Baskaran (@amrish1222)
 
 ## TODO
-- In readme.md add badges and document about lcov installation
+- ~~In readme.md add badges and document about lcov installation~~
 
 ## Standard install via command-line
 ```
@@ -25,6 +25,14 @@ make
 Run tests: ./test/cpp-test
 Run program: ./app/PID-app
 ```
+## Building for code converage
+```
+sudo apt-get install lcov
+cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
+make
+make code_coverage
+```
+
 ## Working with Eclipse IDE ##
 
 ## Installation
