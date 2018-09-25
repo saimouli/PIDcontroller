@@ -8,13 +8,11 @@ Role: Solo programmer<br/>
 Author: Saimouli Katragadda (@saimouli)
 
 ## Assignemnt Part 2 Author
-Driver:Kapil Rawal (@krawal19)<br/>
-Navigator:Amrish Baskaran (@amrish1222)
+Driver: Kapil Rawal (@krawal19)<br/>
+Navigator: Amrish Baskaran (@amrish1222)
 
-## Simple PID C++ project with:
-
-- cmake
-- googletest
+## TODO
+- In readme.md add badges and document about lcov installation
 
 ## Standard install via command-line
 ```
