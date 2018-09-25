@@ -1,6 +1,5 @@
 # PID controller Implimentation using Test-Driven Development 
 [![Build Status](https://travis-ci.org/saimouli/PIDcontroller.svg?branch=master)](https://travis-ci.org/saimouli/PIDcontroller)
-
 [![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
 ---
 
@@ -13,8 +12,15 @@ Driver: Kapil Rawal (@krawal19)<br/>
 Navigator: Amrish Baskaran (@amrish1222)
 
 ## TODO
-- ~~In readme.md add badges and document about lcov installation~~
+- [x] In readme.md add badges and document about lcov installation
 
+## Overview 
+This repository is a simple illustration of TDD concepts
+and implementation of toy PID controller using <br/>
+- cmake
+- gtest
+- Coveralls
+- TravisCI
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/saimouli/PIDcontroller.git
