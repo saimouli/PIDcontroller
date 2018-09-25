@@ -4,11 +4,11 @@
 [![Coverage Status](https://coveralls.io/repos/github/saimouli/PIDcontroller/badge.svg?branch=master)](https://coveralls.io/github/saimouli/PIDcontroller?branch=master)
 ---
 
-## Assignemnt Part 1 Author
+## Assignement Part 1 Author
 Role: Solo programmer<br/>
 Author: Saimouli Katragadda (@saimouli)
 
-## Assignemnt Part 2 Author
+## Assignement Part 2 Author
 Driver: Kapil Rawal (@krawal19)<br/>
 Navigator: Amrish Baskaran (@amrish1222)
 
