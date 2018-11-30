@@ -11,22 +11,38 @@
  */
 #include <iostream>
 #include "PID.h"
+#include "generalPID.h"
+#include "memory"
 
-using std::cin;
-using std::cout;
-using std::endl;
 
 int main() {
-  // passing kP,kD,kI,dT values
-  PID pid(2, 1, 0.1, 0.5);
+  // Instantiate a object
+  PID pid;
+  // point the virtual class object to the PID class
+  std::unique_ptr<generalPID> gpid = std::make_unique<PID>();
+
+  // variables to hold user input
   float fVal, iVal;
+
   // input Target setpoint velocity
-  cout << "enter the Target setpoint velocity" << endl;
-  cin >> fVal;
+  std::cout << "Enter the Target setpoint velocity" << std::endl;
+  std::cin >> fVal;
+
   // input actual velocity
-  cout << "enter the actual velocity" << endl;
-  cin >> iVal;
+  std::cout << "Enter the actual velocity" << std::endl;
+  std::cin >> iVal;
+
+  // set the PID gains
+  gpid->setKD(1);
+  gpid->setKI(0.1);
+  gpid->setKP(2);
+
+  // compute the control input
   float inc = pid.computePID(fVal, iVal);
-  cout << inc << endl;
+
+  // output the input to the screen
+  std::cout << "Input: " << inc << std::endl;
+
   return 0;
 }
+
