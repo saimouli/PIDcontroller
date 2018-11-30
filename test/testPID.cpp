@@ -32,8 +32,8 @@
  */
 
 #include <iostream>
-#include <gtest/gtest.h>
-#include <gmock/gmock.h>
+#include "gtest/gtest.h"
+#include "gmock/gmock.h"
 #include "mockgeneralPID.h"
 #include "GmockStatic.h"
 #include "generalPID.h"
@@ -108,7 +108,7 @@ TEST(GmockStatic, computeMethodTest) {
   std::unique_ptr<mockgeneralPID> gpid(new mockgeneralPID);
   std::unique_ptr<GmockStatic> gmock;
 
-  EXPECT_CALL(*gpid, computePID(1,2)).Times(1).WillOnce(Return(0.0));
+  EXPECT_CALL(*gpid , computePID(1, 2)).Times(1).WillOnce(Return(0.0));
   gmock->compute_PID(std::move(gpid));
 
   float newVel = pid.computePID(1, 2);
