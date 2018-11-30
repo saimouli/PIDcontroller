@@ -7,6 +7,6 @@ add_executable(
     ../app/PID.cpp
 )
 
-target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
-                                           ${CMAKE_SOURCE_DIR}/include)
-target_link_libraries(cpp-test PUBLIC gtest)
+target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include PUBLIC ../vendor/googletest/googlemock/include ${CMAKE_SOURCE_DIR}/include)
+
+target_link_libraries(cpp-test PUBLIC gtest PUBLIC gmock)
