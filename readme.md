@@ -5,10 +5,27 @@
 
 ## Overview 
 This repository is a simple illustration of gmock test using PID classes
-and implementation of toy PID controller using <br/>
+and implementation of toy PID controller using the following dependecies:<br/>
 - cmake
 - gtest
 - gmock
+
+A virtual generalPID class is created to test the mocking framework interfaces in C++ using gmock. The virtual functions are inherited by the PID class which re-defines the pure virtual computePID function. 
+
+In the ```mockgeneralPID.h``` file located in test folder all the functions used in gmocks are defined 
+```
+class mockgeneralPID : public generalPID {
+ public:
+  MOCK_METHOD2(computePID, float(float,float));
+  
+  MOCK_METHOD1(setKP, bool(float kp));
+  
+  MOCK_METHOD1(setKI, bool(float ki));
+  
+  MOCK_METHOD1(setKD, bool(float kd));
+};
+```
+In the ```testPID.cpp``` file, all the tests are implemented with inline comments for reference.
 
 ## Standard install via command-line
 ```
@@ -44,9 +61,9 @@ In your work directory, use cmake to create an Eclipse project for an [out-of-so
 
 ```
 cd ~/workspace
-mkdir -p boilerplate-eclipse
-cd boilerplate-eclipse
-cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-boilerplate/
+mkdir -p PID-eclipse
+cd PID-eclipse
+cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../PIDcontroller/
 ```
 
 ## Import
