@@ -11,15 +11,15 @@
 #define INCLUDE_PID_H_
 
 #include <iostream>
+#include "generalPID.h"
 
 /**
  * @brief Implementation of PID controller
  */
-class PID {
+class PID : public generalPID {
  public:
   PID();
   
- float iterr;
   /**
    * @brief default constructor assign zeros
    * @param kp
@@ -53,55 +53,11 @@ class PID {
   float getKI();
 
   /**
-   * @brief sets the kp gain value according to the passed value
-   * @param kp gain
-   */
-  void setKP(float kP);
-
-  /**
-   * @brief sets the kI gain value according to the passed value
-   * @param kI gain
-   */
-  void setKI(float kI);
-
-  /**
-   * @brief sets the kD gain value according to the passed value
-   * @param kD gain
-   */
-  void setKD(float kD);
-
-  /**
    * @brief sets the kD gain value according to the passed value
    * @param setpoint velocity
    * @param current velocity
    */
   float computePID(float, float);
-
- private:
-  /**
-   * @brief kp proportional gain
-   */
-  float kP;
-
-  /**
-   * @brief kd derivative gain
-   */
-  float kD;
-
-  /**
-   * @brief ki interal gain
-   */
-  float kI;
-
-  /**
-   * @brief dT time constant
-   */
-  float dT;
-
-  /**
-   * @brief previous error term
-   */
-  float prevErr;
 };
 
 
