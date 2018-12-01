@@ -10,9 +10,11 @@ and implementation of toy PID controller using the following dependecies:<br/>
 - gtest
 - gmock
 
-A virtual generalPID class is created to test the mocking framework interfaces in C++ using gmock. The virtual functions are inherited by the PID class which re-defines the pure virtual computePID function. 
+## Google Mock Testing 
 
-In the ```mockgeneralPID.h``` file located in test folder all the functions used in gmocks are defined 
+A virtual "generalPID" class is created to test the mocking framework interfaces in C++ using gmock. The virtual methods are inherited by the PID class where virtual computePID function is re-defined.  
+
+In the ```mockgeneralPID.h``` file located in test folder all the methods used in gmocks are defined and are given below:
 ```
 class mockgeneralPID : public generalPID {
  public:
@@ -26,6 +28,19 @@ class mockgeneralPID : public generalPID {
 };
 ```
 In the ```testPID.cpp``` file, all the tests are implemented with inline comments for reference.
+
+## cmake updates 
+To use gmock make the following changes 
+
+- Base cmake add the following line ```add_subdirectory(vendor/googletest)```
+- test/cmake: Include the following lines at the end of the cmake
+```
+target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include PUBLIC ../vendor/googletest/googlemock/include ${CMAKE_SOURCE_DIR}/include)
+
+target_link_libraries(cpp-test PUBLIC gtest PUBLIC gmock)
+```
+The above lines will include both gtest and gmock dependency 
+To check the gmock documentation clike [here](https://github.com/abseil/googletest/blob/master/googlemock/docs/ForDummies.md)
 
 ## Standard install via command-line
 ```
